@@ -28,7 +28,7 @@ This repository contains the source code for my personal developer portfolio —
 
 <!-- Add a screenshot or GIF of the site here -->
 <div align="center">
-  <img src="./assets/portfolio-home.png" alt="Homepage Preview" width="80%" />
+  <img src="./src/assets/portfolio-home.png" alt="Homepage Preview" width="80%" />
 </div>
 
 ## 🛠️ Tech Stack
