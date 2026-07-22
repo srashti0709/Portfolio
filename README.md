@@ -48,10 +48,10 @@ This repository contains the source code for my personal developer portfolio —
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/<your-repo-name>.git
+git clone https://github.com/srashti0709/Portfolio.git
 
 # Navigate into the project directory
-cd <your-repo-name>
+cd Portfolio
 
 # Install dependencies
 npm install
@@ -74,6 +74,8 @@ npm run build
 ├── public/
 ├── src/
 │   ├── components/
+│   ├── pages/
+│   ├── hooks/
 │   ├── assets/
 │   ├── pages/
 │   └── App.jsx
@@ -86,9 +88,9 @@ npm run build
 ## 📬 Contact
 
 - **Portfolio:** [srashtiportfolio.netlify.app](https://srashtiportfolio.netlify.app/)
-- **GitHub:** [@your-username](https://github.com/your-username)
-- **LinkedIn:** [Your LinkedIn](https://linkedin.com/in/your-linkedin)
-- **Email:** your.email@example.com
+- **GitHub:** [srashti0709](https://github.com/srashti0709)
+- **LinkedIn:** [Your LinkedIn](https://www.linkedin.com/in/srashti-shakya-06a406303/)
+- **Email:** srashtishakya07@gmail.com
 
 ## 📄 License
 
