@@ -2,7 +2,7 @@
 
 <!-- Banner: replace with a screenshot or GIF of your homepage / Skill Galaxy in action -->
 <!-- Recommended size: 1200x630px, saved as assets/banner.png or banner.gif -->
-<img src="./assets/banner.png" alt="Srashti Shakya Portfolio Banner" width="100%" />
+<img src="./src/assets/banner.png" alt="Srashti Shakya Portfolio Banner" width="100%" />
 
 # Srashti Shakya | Portfolio
 
