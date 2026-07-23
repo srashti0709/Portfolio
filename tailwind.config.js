@@ -10,13 +10,11 @@ export default {
         bgPrimary: "#050505",
         bgSecondary: "#0A0A0A",
         bgCard: "#121212",
-        // Cooler, more saturated "neon violet" palette.
-        // Shifted blue-ward from the old #A855F7 family so wide-gamut
-        // (Display P3) phone screens don't push it toward pink/magenta.
-        purplePrimary: "#8B5CF6",
-        purpleGlow: "#A78BFA",
-        purpleAccent: "#6D28D9",
-        purpleSoft: "#8B5CF6",
+        //
+        purplePrimary: "#A855F7",
+        purpleGlow: "#D946EF",
+        purpleAccent: "#C026D3",
+        purpleSoft: "#E879F9",
         textWhite: "#FFFFFF",
         textSecondary: "#D1D5DB",
         textMuted: "#9CA3AF",
@@ -37,9 +35,8 @@ export default {
       },
       keyframes: {
         'glow-pulse': {
-          // Stronger, wider bloom at both ends of the pulse
-          '0%': { boxShadow: '0 0 8px rgba(157, 78, 221, 0.55), 0 0 18px rgba(157, 78, 221, 0.3)' },
-          '100%': { boxShadow: '0 0 28px rgba(199, 125, 255, 0.95), 0 0 55px rgba(199, 125, 255, 0.55)' },
+          '0%': { boxShadow: '0 0 5px rgba(168, 85, 247, 0.4), 0 0 10px rgba(168, 85, 247, 0.2)' },
+          '100%': { boxShadow: '0 0 20px rgba(217, 70, 239, 0.8), 0 0 35px rgba(217, 70, 239, 0.4)' },
         },
         'float-slow': {
           '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
@@ -54,8 +51,8 @@ export default {
           '50%': { transform: 'translate(3px, -5px)' },
         },
         'border-pulse': {
-          '0%, 100%': { borderColor: 'rgba(157, 78, 221, 0.35)' },
-          '50%': { borderColor: 'rgba(199, 125, 255, 0.9)' },
+          '0%, 100%': { borderColor: 'rgba(168, 85, 247, 0.3)' },
+          '50%': { borderColor: 'rgba(217, 70, 239, 0.8)' },
         },
         'text-shimmer': {
           '0%, 100%': { backgroundPosition: '0% 50%' },

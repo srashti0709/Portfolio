@@ -212,4 +212,6 @@
   border: 2px solid indigo;
   box-shadow: 0 0 20px 4px rgba(157, 78, 221, 0.55);
   box-shadow: 0 0 20px 4px color(srgb 0.616 0.306 0.867 / 0.55);
+}ainer:hover .project-card-image {
+  transform: scale(1);
 }
