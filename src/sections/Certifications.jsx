@@ -29,14 +29,14 @@ export default function Certifications() {
               <div
                 key={idx}
                 onClick={() => setSelectedCert(cert)}
-                className="w-72 sm:w-80 glass-panel bg-bgCard/35 border-purplePrimary/12 hover:border-purpleSoft/60 p-6 rounded-2xl flex flex-col justify-between items-start text-left cursor-pointer transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex-shrink-0"
+                className="w-72 sm:w-80 glass-panel bg-bgCard/35 border-purplePrimary/12 hover:border-purplePrimary/60 p-6 rounded-2xl flex flex-col justify-between items-start text-left cursor-pointer transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.3)] flex-shrink-0"
               >
                 <div>
-                  <div className="p-2.5 rounded-xl bg-purplePrimary/10 border border-purplePrimary/20 text-purpleSoft mb-4 inline-block">
+                  <div className="p-2.5 rounded-xl bg-purplePrimary/10 border border-purplePrimary/20 text-purplePrimary mb-4 inline-block">
                     <Award className="w-5 h-5" />
                   </div>
                   <h3 className="text-base font-bold text-textWhite mb-1.5 leading-snug">{cert.title}</h3>
-                  <span className="text-xs text-purpleSoft uppercase font-space font-semibold tracking-wider">{cert.issuer}</span>
+                  <span className="text-xs text-purplePrimary uppercase font-space font-semibold tracking-wider">{cert.issuer}</span>
                 </div>
                 <div className="flex items-center gap-1.5 text-[10px] text-textMuted mt-5 font-space">
                   <Calendar className="w-3.5 h-3.5" />

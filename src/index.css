@@ -56,7 +56,7 @@
     border: 2px solid #050505;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #A855F7;
+    background: #9D4EDD;
   }
 }
 
@@ -65,32 +65,33 @@
   background: rgba(10, 10, 10, 0.7);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(168, 85, 247, 0.12);
+  border: 2px solid rgba(157, 78, 221, 0.16);
   border-radius: 16px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass-panel:hover {
-  border-color: rgba(168, 85, 247, 0.3);
-  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.05);
+  border-color: indigo;
+  box-shadow: 10px 10px 35px indigo;
+  box-shadow: 10px 10px 35px color(srgb 0.616 0.306 0.867 / 0.12);
 }
 
 .glass-nav {
   background: rgba(5, 5, 5, 0.75);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(168, 85, 247, 0.08);
+  border-bottom: 1px solid rgba(157, 78, 221, 0.12);
 }
 
 /* Text Gradients */
 .text-neon-glow {
-  background: linear-gradient(135deg, #FFFFFF 40%, #E879F9 85%, #A855F7 100%);
+  background: linear-gradient(135deg, #FFFFFF 40%, #C77DFF 85%, #9D4EDD 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-text-purple {
-  background: linear-gradient(to right, #ffffff, #e879f9, #a855f7);
+  background: linear-gradient(to right, #ffffff, #C77DFF, #9D4EDD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -100,12 +101,13 @@
   position: relative;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(168, 85, 247, 0.2);
+  border: 2px solid rgba(157, 78, 221, 0.3);
 }
 
 .glow-btn:hover {
-  box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
-  border-color: rgba(217, 70, 239, 0.6);
+  box-shadow: 0 0 22px rgba(157, 78, 221, 0.5), 0 0 45px rgba(199, 125, 255, 0.25);
+  box-shadow: 0 0 22px color(srgb 0.616 0.306 0.867 / 0.5), 0 0 45px color(srgb 0.780 0.490 1.0 / 0.25);
+  border-color: rgba(199, 125, 255, 0.75);
   transform: translateY(-2px);
 }
 
@@ -125,16 +127,16 @@
 
 /* Rich, subtle background with moving lights, auroras, and grid lines */
 .aurora-bg {
-  background: radial-gradient(circle at 10% 20%, rgba(168, 85, 247, 0.08) 0%, transparent 40%),
-              radial-gradient(circle at 90% 80%, rgba(217, 70, 239, 0.06) 0%, transparent 45%),
+  background: radial-gradient(circle at 10% 20%, rgba(157, 78, 221, 0.12) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(199, 125, 255, 0.09) 0%, transparent 45%),
               #050505;
   position: relative;
 }
 
 /* Subtle Animated Grid Background */
 .cyber-grid {
-  background-image: linear-gradient(to right, rgba(168, 85, 247, 0.02) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(168, 85, 247, 0.02) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(157, 78, 221, 0.035) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(157, 78, 221, 0.035) 1px, transparent 1px);
   background-size: 50px 50px;
 }
 
@@ -143,7 +145,7 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.04) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(157, 78, 221, 0.07) 0%, transparent 70%);
   top: -100px;
   right: -100px;
   pointer-events: none;
@@ -154,7 +156,7 @@
   position: absolute;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(217, 70, 239, 0.03) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(199, 125, 255, 0.05) 0%, transparent 70%);
   bottom: -200px;
   left: -200px;
   pointer-events: none;
@@ -172,7 +174,7 @@
   50% { border-color: transparent }
 }
 .typing-caret {
-  border-right: 2px solid #D946EF;
+  border-right: 2px solid #C77DFF;
   animation: blink .75s step-end infinite;
 }
 
@@ -204,4 +206,10 @@
 
 .project-card-container:hover .project-card-image {
   transform: scale(1);
+}
+
+.project-card-container:hover {
+  border: 2px solid indigo;
+  box-shadow: 0 0 20px 4px rgba(157, 78, 221, 0.55);
+  box-shadow: 0 0 20px 4px color(srgb 0.616 0.306 0.867 / 0.55);
 }

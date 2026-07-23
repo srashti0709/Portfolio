@@ -120,7 +120,7 @@ if (projectId === 'discover-ajmer') {
               className={`px-4 py-2 rounded-xl text-xs font-bold font-space transition-all duration-300 ${
                 filter === btn.value
                   ? 'bg-purplePrimary text-bgPrimary shadow-[0_0_12px_rgba(168,85,247,0.35)]'
-                  : 'bg-bgCard border border-purplePrimary/15 text-textSecondary hover:text-textWhite hover:border-purpleSoft/40'
+                  : 'bg-bgCard border border-purplePrimary/15 text-textSecondary hover:text-textWhite hover:border-purplePrimary'
               }`}
             >
               {btn.label}
@@ -141,8 +141,8 @@ if (projectId === 'discover-ajmer') {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.3 }}
-                  whileHover={{boxShadow:"0px 0px 20px 4px rgba(124, 58, 237, 0.6)" }}
-                  className="project-card-container flex flex-col justify-between glass-panel border-purplePrimary/12 bg-bgCard/35 rounded-2xl overflow-hidden shadow-lg h-full text-left border:1 hover:border-violet-600"
+                  whileHover={{boxShadow:"0px 0px 10px 4px rgba(139, 92, 246, 0.5)" }}
+                  className="project-card-container flex flex-col justify-between glass-panel border-purplePrimary/12 bg-bgCard/35 rounded-2xl overflow-hidden shadow-lg h-full text-left border:1 hover:border-purplePrimary"
                 >
                   <div className="w-full">
                     {/* Visual Card Image Graphic */}

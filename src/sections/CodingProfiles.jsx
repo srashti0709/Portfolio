@@ -53,7 +53,7 @@ export default function CodingProfiles() {
           {portfolioData.codingProfiles.map((profile) => (
             <motion.div
               key={profile.platform}
-              whileHover={{ y: -6 ,boxShadow: "0px 0px 20px 4px rgba(168, 85, 247, 0.6)" }}
+              whileHover={{ y: -6 ,boxShadow: "0px 0px 10px 4px rgba(139, 92, 246, 0.5)",border:"2px solid rgba(139, 92, 246, 0.5)" }}
               transition={{ type: 'spring', damping: 20 }}
               className="glass-panel border-purplePrimary/12 bg-bgCard/35 p-8 min-h-[300px] rounded-2xl flex flex-col justify-between items-start text-left relative overflow-hidden shadow-md"
             >

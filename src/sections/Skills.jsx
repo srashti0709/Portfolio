@@ -71,10 +71,11 @@ export default function Skills() {
             <button
               key={cat.value}
               onClick={() => setActiveCategory(cat.value)}
+              
               className={`px-4 py-2 rounded-xl text-xs font-bold font-space transition-all duration-300 ${
                 activeCategory === cat.value
                   ? 'bg-purplePrimary text-bgPrimary shadow-[0_0_12px_rgba(168,85,247,0.35)]'
-                  : 'bg-bgCard border border-purplePrimary/15 text-textSecondary hover:text-textWhite hover:border-purpleSoft/40'
+                  : 'bg-bgCard border border-purplePrimary/15 text-textSecondary hover:text-textWhite hover:border-violet-600'
               }`}
             >
               {cat.label}
@@ -93,8 +94,8 @@ export default function Skills() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.25 }}
-                whileHover={{ y: -3, borderColor: 'rgba(217, 70, 239, 0.45)' }}
-                className="glass-panel border-purplePrimary/12 bg-bgCard/35 p-4 rounded-xl flex items-center gap-3 text-left shadow-sm select-none"
+                whileHover={{ y: -3,border:"2px solid indigo"}}
+                className="glass-panel p-4 rounded-xl flex items-center gap-3 text-left shadow-sm select-none border:3 hover:border-violet-600"
               >
                 {/* Official Icon Wrapper */}
                 <div className="p-2 rounded-lg bg-bgPrimary border border-purplePrimary/10 flex-shrink-0 flex items-center justify-center">

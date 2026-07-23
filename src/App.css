@@ -2,17 +2,19 @@
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
+  color: var(--accent, #9D4EDD);
+  background: var(--accent-bg, rgba(157, 78, 221, 0.08));
   border: 2px solid transparent;
   transition: border-color 0.3s;
   margin-bottom: 24px;
 
   &:hover {
-    border-color: var(--accent-border);
+    border-color: var(--accent-border, #C77DFF);
+    box-shadow: 0 0 16px rgba(157, 78, 221, 0.4);
+    box-shadow: 0 0 16px color(srgb 0.616 0.306 0.867 / 0.4);
   }
   &:focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--accent, #9D4EDD);
     outline-offset: 2px;
   }
 }
@@ -128,7 +130,7 @@
     transition: box-shadow 0.3s;
 
     &:hover {
-      box-shadow: var(--shadow);
+      box-shadow: var(--shadow, 0 2px 14px rgba(164, 86, 229, 0.4));
     }
     .button-icon {
       height: 18px;

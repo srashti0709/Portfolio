@@ -127,7 +127,7 @@ export default function Hero() {
             
             <button
               onClick={handleDownloadResume}
-              className="px-6 py-3.5 rounded-xl bg-bgCard hover:bg-bgSecondary border border-purplePrimary/15 hover:border-purpleSoft text-textWhite font-bold text-sm flex items-center gap-2 transition-all duration-300"
+              className="px-6 py-3.5 rounded-xl bg-bgCard hover:bg-bgSecondary border border-purplePrimary/15 hover:border-violet-600 text-textWhite font-bold text-sm flex items-center gap-2 transition-all duration-300"
             >
               <Download className="w-4 h-4" />
               <span>Resume</span>
@@ -139,7 +139,7 @@ export default function Hero() {
                 href={portfolioData.profile.github}
                 target="_blank" 
                 rel="noreferrer"
-                className="p-3.5 rounded-xl bg-bgCard hover:bg-bgSecondary border border-purplePrimary/15 hover:border-purpleSoft text-textSecondary hover:text-white transition-all duration-300"
+                className="p-3.5 rounded-xl bg-bgCard hover:bg-bgSecondary border border-purplePrimary/15 hover:border-violet-600 text-textSecondary hover:text-white transition-all duration-300"
                 aria-label="GitHub Profile"
               >
                 <FaGithub className="w-4.5 h-4.5" />
@@ -148,7 +148,7 @@ export default function Hero() {
                 href={portfolioData.profile.linkedin}
                 target="_blank" 
                 rel="noreferrer"
-                className="p-3.5 rounded-xl bg-bgCard hover:bg-bgSecondary border border-purplePrimary/15 hover:border-purpleSoft text-textSecondary hover:text-white transition-all duration-300"
+                className="p-3.5 rounded-xl bg-bgCard hover:bg-bgSecondary border border-purplePrimary/15 hover:border-violet-600 text-textSecondary hover:text-white transition-all duration-300"
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedin className="w-4.5 h-4.5" />
@@ -158,7 +158,7 @@ export default function Hero() {
                 className="p-3.5 rounded-xl bg-bgCard hover:bg-bgSecondary border border-purplePrimary/15 hover:border-purpleSoft text-textSecondary hover:text-white transition-all duration-300"
                 aria-label="Contact Section"
               >
-                <Mail className="w-4.5 h-4.5" />
+                <Mail className="w-4 h-4" />
               </button>
             </div>
           </motion.div>
@@ -170,7 +170,8 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ type: 'spring', stiffness: 100, delay: 0.3 }}
-            className="relative w-72 h-80 sm:w-80 sm:h-[360px] md:w-96 md:h-[400px] rounded-3xl  border border-purplePrimary/30 hover:border-purpleGlow shadow-[0_0_25px_rgba(168,85,247,0.08)] hover:shadow-[0_0_40px_rgba(217,70,239,0.35)] transition-all duration-500 flex items-center justify-center bg-bgSecondary group cursor-pointer"
+            className="relative w-72 h-80 sm:w-80 sm:h-[360px] md:w-96 md:h-[400px] rounded-3xl  border border-purplePrimary/30 hover:border-purplePrimary shadow-[0_4px_25px_rgba(139, 92, 246, 0.5)
+] hover:shadow-[0_0_40px_rgba(217,70,239,0.35)] transition-all duration-500 flex items-center justify-center bg-bgSecondary group cursor-pointer"
           >
             {/* Portrait Image wrapper */}
             <div className="w-full h-full rounded-2xl overflow-hidden border border-purplePrimary/20">
@@ -181,7 +182,7 @@ export default function Hero() {
               />
             </div>
             {/* Subtle purple border glow overlay */}
-            <div className="absolute -inset-1 rounded-3xl border border-purpleSoft/15 pointer-events-none group-hover:border-purpleSoft/35 transition-colors duration-500 animate-pulse" />
+            {/* div className="absolute -inset-1 rounded-3xl border border-purpleSoft/15 pointer-events-none group-hover:border-purpleSoft/35 transition-colors duration-500 animate-pulse" /> */}
           </motion.div>
         </div>
 

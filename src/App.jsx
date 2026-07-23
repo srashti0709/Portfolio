@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import CommandPalette from './components/CommandPalette';
 import AIAssistant from './components/AIAssistant';
-import SubtleCanvasBg from './components/SubtleCanvasBg';
+import BackgroundScene from "./components/background/BackgroundScene";
 
 // Main Sections
 import Hero from './sections/Hero';
@@ -36,13 +36,14 @@ export default function App() {
   return (
     <>
       {/* Canvas Backdrop with Floating Particles & glowing dots */}
-      <SubtleCanvasBg />
+      <BackgroundScene />
+      <div className="relative z-10">
 
       {/* Background Noise Overlay */}
       <div className="noise-overlay" />
 
       {/* Main Page Layout Container */}
-      <div className="relative min-h-screen bg-bgPrimary text-white overflow-hidden selection:bg-purplePrimary/35 selection:text-white">
+      <div className="relative min-h-screen bg-transparent text-white overflow-hidden selection:bg-purplePrimary/35 selection:text-white">
         
         {/* Floating Navbar */}
         <Navbar onOpenPalette={handleTogglePalette} />
@@ -74,7 +75,7 @@ export default function App() {
 
         {/* AI Neural Chat Assistant widget */}
         <AIAssistant />
-
+</div>
       </div>
     </>
   );
